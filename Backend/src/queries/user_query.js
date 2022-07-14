@@ -15,7 +15,7 @@ class queryInformation {
 
   async getUserPoints(user_id) {
     const script = `
-      SELECT id, points FROM user_info
+      SELECT id, name, points FROM user_info
       WHERE id = $1
     `
     const values = [user_id]
