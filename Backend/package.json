@@ -1,0 +1,17 @@
+{
+  "name": "query-api",
+  "version": "0.0.0",
+  "description": "Query API HC22",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3"
+  }
+}
