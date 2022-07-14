@@ -5,7 +5,7 @@ const UserInfo = require('../model/user_info.model')
 class queryInformation {
   async getUserInfo() {
     const script = `
-      SELECT * FROM query_points
+      SELECT * FROM user_info
     `;
 
     const { rows } = await db.query(script)
@@ -15,14 +15,29 @@ class queryInformation {
 
   async getUserPoints(user_id) {
     const script = `
-      SELECT user_id, points FROM query_points
-      WHERE user_id = $1
+      SELECT id, points FROM user_info
+      WHERE id = $1
     `
     const values = [user_id]
 
     const { rows } = await db.query(script, values)
     const [ points ] = rows
     return points || []
+  }
+
+  async createUser(user) {
+    const script = `
+      INSERT INTO user_info 
+      (name, email, password, points)
+      VALUES ($1, $2, crypt($3, 'my_salt'), $4)
+      RETURNING id
+    `
+  
+    const values = [user.name, user.email, user.password, user.points]
+    const { rows } = await db.query(script, values)
+    const [ newUser ] = rows
+  
+    return newUser.id
   }
 }
 
