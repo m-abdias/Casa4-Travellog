@@ -12,6 +12,18 @@ class queryInformation {
 
     return rows || []
   }
+
+  async getUserPoints(user_id) {
+    const script = `
+      SELECT user_id, points FROM query_points
+      WHERE user_id = $1
+    `
+    const values = [user_id]
+
+    const { rows } = await db.query(script, values)
+    const [ points ] = rows
+    return points || []
+  }
 }
 
 module.exports =  new queryInformation()
