@@ -1,6 +1,8 @@
-const UserInfo = (user_id, name, points) => {
-  this.user_id = user_id
+const UserInfo = (id, name, email, password, points) => {
+  this.id = id
   this.name = name
+  this.email = email
+  this.password = password
   this.points = points
 }
 
