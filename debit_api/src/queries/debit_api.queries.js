@@ -3,11 +3,11 @@ const db = require('../../db/config')
 const User = require('../models/user.model')
 
 class debitPoints {
-  async changeUserPoints(user) {
+  async debitUserPoints(user) {
     const script = `
-      UPDATE user_info SET 
-        points = $1
-      WHERE id = $2
+      UPDATE user_info SET
+        points = points - $1
+      WHERE id = $2  
     `
 
     const values = [user.points, user.id]
