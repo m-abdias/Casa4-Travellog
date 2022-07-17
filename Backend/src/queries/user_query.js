@@ -39,6 +39,17 @@ class queryInformation {
   
     return newUser.id
   }
+  
+  async addUserPoints(user) {
+    const script = `
+      UPDATE user_info SET
+        points = points + $1
+      WHERE id = $2  
+    `
+
+    const values = [user.points, user.id]
+    await db.query(script, values)
+  }
 }
 
 module.exports =  new queryInformation()
