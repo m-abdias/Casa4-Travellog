@@ -8,7 +8,7 @@ debitRoute.patch('/debit_api/v1/user_points/:id', async (req, res, next) => {
     const idUser = req.params.id
     const modifiedPoints = req.body
     modifiedPoints.id = idUser
-    res.sendStatus(200)
+    res.sendStatus(204)
 
     await debitPoints.changeUserPoints(modifiedPoints)
   } catch (error) {
