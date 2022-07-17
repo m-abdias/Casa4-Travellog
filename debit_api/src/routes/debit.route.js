@@ -3,14 +3,14 @@ const debitPoints = require('../queries/debit_api.queries')
 
 const debitRoute = router()
 
-debitRoute.patch('/debit_api/v1/user_points/:id', async (req, res, next) => {
+debitRoute.patch('/debit_api/v1/debit_points/:id', async (req, res, next) => {
   try {
-    const idUser = req.params.id
-    const modifiedPoints = req.body
-    modifiedPoints.id = idUser
-    res.sendStatus(204)
+    const id = req.params.id
+    const debit = req.body
+    debit.id = id
 
-    await debitPoints.changeUserPoints(modifiedPoints)
+    await debitPoints.debitUserPoints(debit)
+    res.sendStatus(204)
   } catch (error) {
     next(error)
   }
