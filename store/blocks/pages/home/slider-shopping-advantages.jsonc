@@ -1,0 +1,153 @@
+{
+    "slider-layout#shopping-advantages": {
+        "props": {
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "infinite": true,
+
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "blockClass": "shoppingAdvantages-container"
+        },
+
+        "children": [
+            "flex-layout.row#imported-container",
+            "flex-layout.row#stock-container",
+            "flex-layout.row#guaranteed-container",
+            "flex-layout.row#off-container",
+            "flex-layout.row#free-container"
+        ]
+    },
+
+    "flex-layout.row#imported-container": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "shopping-advantages"
+        },
+
+        "children": [
+            "image#imported",
+            "rich-text#Imported-products"
+        ]
+    },
+    "image#imported": {
+        "props": {
+            "src": "assets/svgs/word-icon.svg",
+            "maxWidth": 32,
+            "maxHeight": 32
+        }
+    },
+    "rich-text#Imported-products": {
+        "props": {
+            "text": "##### Produtos importados \n Produto de Alta Qualidade",
+            "blockClass": "shopping-description"
+        }
+    },
+
+    "flex-layout.row#stock-container": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "shopping-advantages"
+        },
+
+        "children": [
+            "image#stock",
+            "rich-text#stock-in-brazil"
+        ]
+    },
+    "image#stock": {
+        "props": {
+            "src": "assets/svgs/stock-icon.svg",
+            "maxWidth": 32,
+            "maxHeight": 32
+        }
+    },
+    "rich-text#stock-in-brazil": {
+        "props": {
+            "text": "##### Estoque no Brazil \n Produtos mais perto de você!",
+            "blockClass": "shopping-description"
+        }
+    },
+
+    "flex-layout.row#guaranteed-container": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "shopping-advantages"
+        },
+
+        "children": [
+            "image#guaranteed",
+            "rich-text#guaranteed-exchanges"
+        ]
+    },
+    "image#guaranteed": {
+        "props": {
+            "src": "assets/svgs/guaranteed-icon.svg",
+            "maxWidth": 32,
+            "maxHeight": 32
+        }
+    },
+    "rich-text#guaranteed-exchanges": {
+        "props": {
+            "text": "##### Trocas Garantidas \n Trocas em até 48 horas, vejas as regras",
+            "blockClass": "shopping-description"
+        }
+    },
+
+    "flex-layout.row#off-container": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "shopping-advantages"
+        },
+
+        "children": [
+            "image#off",
+            "rich-text#off"
+        ]
+    },
+    "image#off": {
+        "props": {
+            "src": "assets/svgs/tag-icon.svg",
+            "maxWidth": 32,
+            "maxHeight": 32
+        }
+    },
+    "rich-text#off": {
+        "props": {
+            "text": "##### Ganhe 5% off \n Pagando à vista no Cartão",
+            "blockClass": "shopping-description"
+        }
+    },
+
+    "flex-layout.row#free-container": {
+        "props": {
+            "colSizing": "auto",
+            "blockClass": "shopping-advantages"
+        },
+
+        "children": [
+            "image#free",
+            "rich-text#free-shipping"
+        ]
+    },
+    "image#free": {
+        "props": {
+            "src": "assets/svgs/truck-icon.svg",
+            "maxWidth": 32,
+            "maxHeight": 32
+        }
+    },
+    "rich-text#free-shipping": {
+        "props": {
+            "text": "##### Frete Grátis \n Em compras acima de R$ 499,00",
+            "blockClass": "shopping-description"
+        }
+    }
+}

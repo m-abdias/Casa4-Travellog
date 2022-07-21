@@ -1,31 +1,57 @@
-.sliderLayoutContainer {
-  justify-content: center;
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.sliderLayoutContainer--carousel-image-banner :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+  padding-left: 80px;
+}
+.sliderLayoutContainer--carousel-image-banner :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+  padding-right: 80px;
+}
+.sliderLayoutContainer--carousel-image-banner :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  padding-bottom: 24px;
+}
+.sliderLayoutContainer--carousel-image-banner :global(.vtex-slider-layout-0-x-paginationDotsContainer) .paginationDot {
+  margin-right: 16px;
+  margin-left: 0;
+  width: 16px !important;
+  height: 16px !important;
+  background-color: transparent;
+  border: 1px solid #800073 !important;
+}
+.sliderLayoutContainer--carousel-image-banner :global(.vtex-slider-layout-0-x-paginationDotsContainer) .paginationDot--isActive {
+  background-color: #800073 !important;
 }
 
-.sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
-  min-height: 450px;
+.sliderLayoutContainer--shoppingAdvantages-container {
+  padding: 0 80px;
+}
+.sliderLayoutContainer--shoppingAdvantages-container .sliderTrack--shoppingAdvantages-container {
+  gap: 15px;
+}
+.sliderLayoutContainer--shoppingAdvantages-container .slide--shoppingAdvantages-container {
+  width: 308px !important;
+}
+.sliderLayoutContainer--shoppingAdvantages-container .slideChildrenContainer--shoppingAdvantages-container {
+  padding: 16px 20px;
+  justify-content: flex-start;
+  background-color: #EFEFEF;
+  border-radius: 4px;
 }
 
-.sliderTrackContainer {
-  max-width: 100%;
+.sliderLayoutContainer--partner-brands {
+  padding: 0 80px;
+}
+.sliderLayoutContainer--partner-brands .sliderTrack--partner-brands {
+  gap: 15px;
 }
 
-.paginationDotsContainer {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-
-.layoutContainer--shelf {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 96rem;
-  min-height: 550px;
-}
-
-.slide--shelf {
-  margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  min-height: 550px;
+.sliderLayoutContainer--list-products .sliderTrack--list-products {
+  gap: 15px;
 }

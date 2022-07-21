@@ -1,0 +1,34 @@
+{
+    "flex-layout.row#footer-payments": {
+        "props": {
+            "blockClass": "container-images",
+            "colSizing": "auto"
+        },
+        "children": [
+            "image#visa1",
+            "image#masterCard1",
+            "image#visa2",
+            "image#masterCard2"
+        ]
+    },
+    "image#visa1": {
+        "props": {
+            "src": "assets/svgs/visa-icon.svg"
+        }
+    },
+    "image#masterCard1": {
+        "props": {
+            "src": "assets/svgs/mastercard-icon.svg"
+        }
+    },
+    "image#visa2": {
+        "props": {
+            "src": "assets/svgs/visa-icon.svg"
+        }
+    },
+    "image#masterCard2": {
+        "props": {
+            "src": "assets/svgs/mastercard-icon.svg"
+        }
+    }
+}

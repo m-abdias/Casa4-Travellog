@@ -1,0 +1,8 @@
+{
+    "newsletter": {
+        "props": {
+            "label": "Receba Nossa Newsletter",
+            "placeholder": "Digite seu email"
+        }
+    }
+}

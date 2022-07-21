@@ -1,0 +1,54 @@
+{
+    "slider-layout#partner-brands": {
+        "props": {
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "infinite": true,
+
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "blockClass": "partner-brands"
+        },
+
+        "children": [
+            "image#brand-comma",
+            "image#brand-melissa",
+            "image#brand-forever21",
+            "image#brand-zara",
+            "image#brand-annTaylor"
+        ]
+    },
+
+    "image#brand-comma": {
+        "props": {
+            "src": "assets/imgs/cHLLxR4.png"
+        }
+    },
+    "image#brand-melissa": {
+        "props": {
+            "src": "assets/imgs/JOTNQgl.png"
+        }
+    },
+    "image#brand-forever21": {
+        "props": {
+            "src": "assets/imgs/PN0nOAY.png"
+        }
+    },
+    "image#brand-zara": {
+        "props": {
+            "src": "assets/imgs/Qoc0YF7.png"
+        }
+    },
+    "image#brand-annTaylor": {
+        "props": {
+            "src": "assets/imgs/qZ1WvYA.png"
+        }
+    }
+}

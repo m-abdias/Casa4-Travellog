@@ -1,0 +1,38 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.openIconContainer {
+  padding: 0;
+  border: 1px solid #800073 !important;
+  border-radius: 8px;
+}
+.openIconContainer :global(.vtex-button):hover {
+  background: transparent;
+}
+.openIconContainer :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+.openIconContainer .minicartIconContainer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 15px;
+}
+.openIconContainer .minicartIconContainer::after {
+  content: "Meu Carrinho";
+  color: #353535;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  transition: color 300ms;
+}
+.openIconContainer .minicartIconContainer:hover::after {
+  color: #800073 !important;
+}

@@ -1,0 +1,57 @@
+{
+    "list-context.product-list#productList-home": {
+        "props": {
+            "maxItems": 8
+        },
+
+        "blocks": [
+            "product-summary.shelf"
+        ],
+
+        "children": [
+            "slider-layout#product-home"
+        ]
+    },
+    "product-summary.shelf": {
+        "children": [
+            "product-summary-image",
+            "product-summary-sku-selector",
+            "product-summary-price",
+            "product-summary-name",
+            "product-summary-description",
+            "product-summary-buy-button"
+        ]
+    },
+
+    "product-summary-image": {
+        "props": {
+            "placeholder": "assets/imgs/saia-bege.png",
+            "width": {
+                "desktop": "308px"
+            },
+            "height": {
+                "desktop": "381px"
+            }
+        }
+    },
+    "product-summary-buy-button": {
+        "props": {
+            "buyButtonText": "fdsgsdgsdgfd"
+        }
+    },
+
+    "slider-layout#product-home": {
+        "props": {
+            "showPaginationDots": "never",
+            "infinite": true,
+
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+
+            "blockClass": "list-products"
+        }
+    }
+}

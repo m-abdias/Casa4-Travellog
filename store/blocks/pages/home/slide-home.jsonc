@@ -1,0 +1,101 @@
+{
+    "slider-layout#image-banner": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "carousel-image-banner"
+        },
+
+        "children": [
+            "flex-layout.row#image1",
+            "flex-layout.row#image2",
+            "flex-layout.row#image3"
+        ]
+    },
+
+    "flex-layout.row#image1": {
+        "props": {
+            "blockClass": "image-banner",
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "image#banner-1",
+            "flex-layout.col#information-promotion"
+        ]
+    },
+    "flex-layout.row#image2": {
+        "props": {
+            "blockClass": "image-banner",
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "image#banner-2",
+            "flex-layout.col#information-promotion"
+        ]
+    },
+    "flex-layout.row#image3": {
+        "props": {
+            "blockClass": "image-banner",
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "image#banner-3",
+            "flex-layout.col#information-promotion"
+        ]
+    },
+
+    "image#banner-1": {
+        "props": {
+            "src": "assets/imgs/banner-maeztra.png",
+            "maxWidth": "100%"
+        }
+    },
+    "image#banner-2": {
+        "props": {
+            "src": "assets/imgs/banner-maeztra.png",
+            "maxWidth": "100%"
+        }
+    },
+    "image#banner-3": {
+        "props": {
+            "src": "assets/imgs/banner-maeztra.png",
+            "maxWidth": "100%"
+        }
+    },
+
+    "flex-layout.col#information-promotion": {
+        "props": {
+            "blockClass": "information-promotion"
+        },
+
+        "children": [
+            "rich-text#banner-information",
+            "link#banner-check"
+        ]
+    },
+
+    "rich-text#banner-information": {
+        "props": {
+            "blockClass": "banner-title",
+            "text": "# Promoções de Outono \n Confiras os melhores looks para combinar \n com você nesse Outono"
+        }
+    },
+    "link#banner-check": {
+        "props": {
+            "blockClass": "link-check",
+            "label": "Conferir"
+        }
+    }
+}

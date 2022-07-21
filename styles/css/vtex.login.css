@@ -1,0 +1,37 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.container {
+  gap: 8px;
+}
+.container :global(.vtex-button):hover {
+  background: none;
+}
+.container :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+.container :global(.vtex-button__label) > span {
+  gap: 8px;
+}
+.container :global(.vtex-button__label) > span > div {
+  margin: 0;
+}
+.container .label {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #353535;
+}
+.container .label:hover {
+  color: #800073 !important;
+  transition: all 300ms;
+}

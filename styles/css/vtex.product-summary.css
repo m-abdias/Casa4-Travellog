@@ -1,42 +1,68 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
-  border-radius: 50%;
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.element {
+  height: 100%;
+  padding: 0;
 }
-
-.container :global(.vtex-modal-layout-0-x-triggerContainer) {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
+.element .priceContainer {
+  padding: 0;
+  align-items: flex-start;
 }
-
-.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
-  opacity: 1;
+.element .priceContainer .listPriceContainer {
+  display: none;
 }
-
-@media screen and (max-width: 40em) {
-  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
-    display: none;
-  }
+.element .priceContainer .sellingPriceLabel {
+  display: none;
 }
-
-.nameContainer {
-  justify-content: start;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.element .priceContainer .currencyContainer {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #353535;
 }
-
-.brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
-}
-
-.container {
+.element .nameContainer {
+  padding: 0 0 8px;
   text-align: start;
 }
-
-.imageContainer {
-  text-align: center;
+.element .nameContainer .nameWrapper {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
-
-.image {
-  border-radius: 0.25rem;
+.element .description {
+  padding: 0 0 8px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: start;
+  color: #000000;
+  opacity: 0.5;
+  overflow: auto;
+}
+.element .buyButtonContainer {
+  flex: 1;
+  display: flex;
+  align-items: end;
+  padding: 0;
+}
+.element .buyButtonContainer .buyButton {
+  margin: 0;
+  width: 100%;
+}
+.element .buyButtonContainer .buyButton :global(.vtex-button) {
+  background-color: #800073 !important;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.element .buyButtonContainer .buyButton .buyButtonText {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
 }

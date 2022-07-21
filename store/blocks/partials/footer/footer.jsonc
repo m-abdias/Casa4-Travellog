@@ -1,0 +1,41 @@
+{
+    "footer": {
+        "blocks": ["footer-layout.desktop"]
+    },
+    "footer-layout.desktop": {
+        "children": [
+            "flex-layout.row#footer-links",
+            "flex-layout.row#footer-bottom",
+            "back-to-top-button"
+        ]
+    },
+
+    "flex-layout.row#footer-links": {
+        "children": [
+            "flex-layout.col#information-links",
+            "flex-layout.col#myAccount-links",
+            "flex-layout.col#findUs-links"
+        ],
+        "props": {
+            "blockClass": "footer-links"
+        }
+    },
+
+    "flex-layout.row#footer-bottom": {
+        "children": [
+            "flex-layout.row#social-networks",
+            "flex-layout.row#footer-payments",
+            "flex-layout.row#footer-powered-developed"
+        ],
+        "props": {
+            "blockClass": "footer-bottom"
+        }
+    },
+
+    "back-to-top-button": {
+        "props": {
+            "displayThreshold": 800,
+            "display": "caret-icon"
+        }
+    }
+}

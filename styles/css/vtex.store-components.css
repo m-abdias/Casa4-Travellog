@@ -1,113 +1,170 @@
-.notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.backToTopButtonContainer {
+  width: 50px;
+  height: 50px;
 }
-
-.infoCardContainer--info-card-home {
-  max-width: 1520px;
-  margin: 0 auto;
-  background-color: #e6f1e6;
-  padding: 0px;
+.backToTopButtonContainer :global(.vtex-button) {
+  border-radius: 9999px;
+  width: 100%;
+  height: 100%;
+}
+.backToTopButtonContainer :global(.vtex-button__label) {
+  padding: 0;
 }
 
 .newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
+  padding: 40px 0;
+  margin-bottom: 43px;
+  border-bottom: 2px solid #EFEFEF;
+  border-top: 2px solid #EFEFEF;
 }
-
-.newsletter .container {
-  padding: 60px 10px;
-}
-
-.label {
-  color: #fff;
-  font-size: 26px;
-}
-
-.inputGroup {
-  padding-bottom: 4px;
+.newsletter .form {
   display: flex;
-  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.newsletter .form .label {
+  font-size: 24px;
+  line-height: 37px;
+}
+.newsletter .form .inputGroup {
+  max-width: 500px;
+  width: 500px;
+  padding: 0;
+  border: 0;
+}
+.newsletter .form .inputGroup .buttonContainer {
+  padding: 0;
+}
+.newsletter .form .inputGroup .buttonContainer :global(.vtex-button) {
+  max-width: 100px;
+  width: 100px;
+  text-transform: capitalize;
+  background-color: #800073 !important;
+  border: 0;
 }
 
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
-  background-color: transparent;
-  color: #fff;
+.container {
+  padding: 0;
+}
+
+.logoContainer--logo-maeztra {
+  padding: 0;
+}
+
+.searchBarContainer {
+  max-width: calc(790px / 1.5);
+  padding: 0;
+}
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background-color: #EFEFEF;
   border: none;
 }
-
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+.searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #353535;
+}
+.searchBarContainer :global(.vtex-input__suffix) {
+  background-color: #800073 !important;
+}
+.searchBarContainer .searchBarIcon {
+  width: calc(119px / 2);
+  padding: 0;
+  justify-content: center;
+}
+.searchBarContainer .searchBarIcon::before {
+  content: "Buscar";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: #fff;
-  font-size: 16px;
 }
-
-.inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  margin-right: -24px;
-}
-
-.buttonContainer {
-  padding-top: 0px;
-}
-
-.imageElement--storePrint {
-  max-height: 300px;
-  margin-bottom: 20px;
-}
-
-.skuSelectorContainer {
-  margin: 1rem 0;
-}
-
-@media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
-  .label {
-     font-size: 40px;
-  }
-  .infoCardContainer--info-card-home .infoCardTextContainer {
-    width: 30%;
-  }
-  .infoCardContainer--info-card-home .infoCardImageContainer {
-    width: 70%;
-  }
-  .imageElement--storePrint {
-    margin-bottom: 0px;
-    max-height: 600px;
-  }
-}
-
-.productImagesContainer--quickview .carouselContainer {
-  justify-content: flex-start;
-}
-
-.productImagesContainer--quickview .productImageTag {
-  object-fit: cover !important;
-}
-
-.productImagesContainer--quickview .carouselGaleryThumbs {
+.searchBarContainer .searchBarIcon .searchIcon {
   display: none;
 }
 
-.productImagesContainer--quickview .carouselGaleryCursor {
+.skuSelectorSubcontainer {
   margin: 0;
+}
+.skuSelectorSubcontainer .skuSelectorNameContainer,
+.skuSelectorSubcontainer .skuSelectorTextContainer,
+.skuSelectorSubcontainer .skuSelectorOptionsList {
+  margin: 0;
+}
+.skuSelectorSubcontainer .skuSelectorNameContainer {
+  padding: 8px 0;
+}
+.skuSelectorSubcontainer .skuSelectorNameContainer .skuSelectorName {
+  display: none;
+}
+.skuSelectorSubcontainer .skuSelectorNameContainer .skuSelectorInternalBox {
+  width: 27px;
+  height: 27px;
+}
+.skuSelectorSubcontainer .skuSelectorNameContainer .skuSelectorInternalBox .valueWrapper {
   padding: 0;
+}
+.skuSelectorSubcontainer .skuSelectorOptionsList {
+  gap: 8px;
+}
+.skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem {
+  margin: 0;
+  height: auto;
+}
+.skuSelectorSubcontainer .skuSelectorOptionsList .frameAround {
   width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 0.25rem;
+  border-color: #353535;
 }
 
-.productNameContainer {
-  color: #3f3f40;
-  font-weight: bold;
-  font-size: 30px;
+.infoCardContainer--winter-colletion {
+  padding: 80px;
 }
-
-.image {
-  image-rendering: -webkit-optimize-contrast;
+.infoCardContainer--winter-colletion .infoCardTextContainer--winter-colletion {
+  padding-right: 64px;
+}
+.infoCardContainer--winter-colletion .infoCardTextContainer--winter-colletion .infoCardHeadline--winter-colletion {
+  margin: 0;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+}
+.infoCardContainer--winter-colletion .infoCardTextContainer--winter-colletion .infoCardCallActionContainer--winter-colletion {
+  margin: 0;
+  text-decoration: none;
+}
+.infoCardContainer--winter-colletion .infoCardTextContainer--winter-colletion .infoCardCallActionContainer--winter-colletion .infoCardCallActionText--winter-colletion {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  text-decoration: none;
+  color: #000000;
 }

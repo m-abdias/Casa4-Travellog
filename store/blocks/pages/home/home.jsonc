@@ -1,0 +1,90 @@
+{
+    "store.home": {
+        "blocks": [
+            "flex-layout.row#banner",
+            "rich-text#shoppingAdvantages-title",
+            "slider-layout#shopping-advantages",
+            "__fold__",
+            "flex-layout.row#partnerBrands-section",
+            "flex-layout.row#productList-section",
+            "info-card",
+            "newsletter"
+        ]
+    },
+
+    // banner principal
+    "flex-layout.row#banner": {
+        "props": {
+            "blockClass": "banner"
+        },
+
+        "children": [
+            "slider-layout#image-banner"
+        ]
+    },
+
+    // titulo da sessão vantagens de compra
+    "rich-text#shoppingAdvantages-title": {
+        "props": {
+            "blockClass": "shoppingAdvantages-title",
+            "text": "## Por que comprar?",
+            "textPosition": "CENTER"
+        }
+    },
+
+    // sessão marcas parceiras
+    "flex-layout.row#partnerBrands-section": {
+        "children": [
+            "flex-layout.col#partnerBrands-container"
+        ]
+    },
+
+    "flex-layout.col#partnerBrands-container": {
+        "children": [
+            "rich-text#partnerBrands-title",
+            "slider-layout#partner-brands"
+        ]
+    },
+    "rich-text#partnerBrands-title": {
+        "props": {
+            "text": "## Marcas Parceiras",
+            "textPosition": "CENTER",
+            "blockClass": "brands-title"
+        }
+    },
+
+    // Product List
+    "flex-layout.row#productList-section": {
+        "children": [
+            "flex-layout.col#productList-container"
+        ]
+    },
+
+    "flex-layout.col#productList-container": {
+        "children": [
+            "rich-text#productList-title",
+            "list-context.product-list#productList-home"
+        ]
+    },
+    "rich-text#productList-title": {
+        "props": {
+            "text": "## As Mais Pedidas",
+            "textPosition": "CENTER",
+            "blockClass": "productList-title"
+        }
+    },
+
+    // info card coleção de inverno
+    "info-card": {
+        "props": {
+            "id": "info-card-example",
+            "imageUrl": "assets/imgs/colecao-inverno.png",
+            "headline": "Lorem ipsum",
+            "callToActionMode": "link",
+            "callToActionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque placerat consequat. Neque arcu mi iaculis id. Vel vitae, pharetra, a nec tristique. Feugiat id tortor eu mauris pulvinar velit massa. Ut ornare augue eget convallis volutpat aliquet. Sed sed pellentesque porttitor phasellus donec condimentum sit sapien.",
+            "textPosition": "left",
+            "textAlignment": "left",
+            "blockClass": "winter-colletion"
+        }
+    }
+}

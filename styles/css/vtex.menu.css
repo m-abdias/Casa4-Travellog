@@ -1,0 +1,56 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Colors */
+/* Grid breakpoints */
+.menuContainer--header-menu-link {
+  gap: 50px;
+}
+.menuContainer--header-menu-link .menuItem--menu-link .styledLinkContainer {
+  margin: 0;
+  padding: 0;
+}
+.menuContainer--header-menu-link .menuItem--menu-link .styledLinkContainer .styledLinkContent {
+  font-size: 14px;
+  line-height: 21px;
+  color: #353535;
+}
+.menuContainer--header-menu-link .menuItem--menu-link .styledLinkContainer .styledLinkContent:hover {
+  color: #800073 !important;
+  transition: color 300ms;
+}
+.menuContainer--header-menu-link .menuItem--menu-link-news .styledLinkContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menuContainer--header-menu-link .menuItem--menu-link-news .styledLinkContainer::before {
+  content: url(assets/svgs/vestido-icon.svg);
+}
+.menuContainer--header-menu-link .menuItem--menu-link-news .styledLinkContainer .styledLinkContent {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #800073 !important;
+}
+
+.menuContainer--footer-menu-links {
+  gap: 24px;
+}
+
+.styledLinkContainer--footer-menu-item {
+  margin: 0;
+  padding: 0;
+}
+.styledLinkContainer--footer-menu-item .styledLinkContent--footer-menu-item {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}

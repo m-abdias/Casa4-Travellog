@@ -1,0 +1,77 @@
+{
+    "flex-layout.col#myAccount-links": {
+        "props": {
+            "blockClass": "links-container"
+        },
+        "children": [
+            "rich-text#titleMyAccount-footer",
+            "vtex.menu@2.x:menu#myAccount"
+        ]
+    },
+    "rich-text#titleMyAccount-footer": {
+        "props": {
+            "text": "#### Minha Conta",
+            "blockClass": "titleLinks"
+        }
+    },
+
+    "vtex.menu@2.x:menu#myAccount": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "footer-menu-links"
+        },
+        "children": [
+            "menu-item#myAccount",
+            "menu-item#myRequest",
+            "menu-item#register"
+        ]
+    },
+    "menu-item#myAccount": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-myAccount",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "minha-conta",
+                "noFollow": false,
+                "tagTitle": "minha-conta",
+                "text": "Minha Conta"
+            }
+        }
+    },
+    "menu-item#myRequest": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-myRequest",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "meus-pedidos",
+                "noFollow": false,
+                "tagTitle": "meus-pedidos",
+                "text": "Meus Pedidos"
+            }
+        }
+    },
+    "menu-item#register": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-register",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "cadastre-se",
+                "noFollow": false,
+                "tagTitle": "cadastre-se",
+                "text": "Cadastre-se"
+            }
+        }
+    }
+}

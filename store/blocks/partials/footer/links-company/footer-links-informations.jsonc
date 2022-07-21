@@ -1,0 +1,94 @@
+{
+    "flex-layout.col#information-links": {
+        "props": {
+            "blockClass": "links-container"
+        },
+        "children": [
+            "rich-text#titleInformations-footer",
+            "vtex.menu@2.x:menu#informations"
+        ]
+    },
+    "rich-text#titleInformations-footer": {
+        "props": {
+            "text": "#### Informações",
+            "blockClass": "titleLinks"
+        }
+    },
+
+    "vtex.menu@2.x:menu#informations": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "footer-menu-links"
+        },
+        "children": [
+            "menu-item#quem-somos",
+            "menu-item#prazo-de-envio",
+            "menu-item#troca-devolucao",
+            "menu-item#promocoes-cupons"
+        ]
+    },
+    "menu-item#quem-somos": {
+        "props": {
+            "blockClass": ["footer-menu-item", "footer-menu-title"],
+            "id": "menu-item-whoWeAre",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "quem-somos",
+                "noFollow": false,
+                "tagTitle": "Quem somos",
+                "text": "Quem Somos"
+            }
+        }
+    },
+    "menu-item#prazo-de-envio": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-deadline",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "prazo-de-envio",
+                "noFollow": false,
+                "tagTitle": "prazo-de-envio",
+                "text": "Prazo de Envio"
+            }
+        }
+    },
+    "menu-item#troca-devolucao": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-exchange",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "troca-devolução",
+                "noFollow": false,
+                "tagTitle": "Trocas e Devoluções",
+                "text": "Trocas e Devoluções"
+            }
+        }
+    },
+    "menu-item#promocoes-cupons": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-promotions",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "entrega",
+                "noFollow": false,
+                "tagTitle": "promoções-cupons",
+                "text": "Promoções e Cupons"
+            }
+        }
+    }
+}

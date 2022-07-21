@@ -8,6 +8,13 @@
 /* Media Query M3 */
 /* Colors */
 /* Grid breakpoints */
-.flexRow--footer-bottom {
-  background-color: #800073 !important;
+.link--link-check {
+  padding: 14px 30px;
+  background: #800073 !important;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
 }

@@ -1,0 +1,97 @@
+{
+    "header": {
+        "blocks": [
+            "header-layout.desktop",
+            "header-layout.mobile"
+        ]
+    },
+    "header.full": {
+        "blocks": [
+            "header-layout.desktop",
+            "header-layout.mobile"
+        ]
+    },
+
+    "header-layout.desktop": {
+        "children": [
+            "header-row#1-desktop",
+            "header-row#2-desktop"
+        ]
+    },
+    "header-row#1-desktop": {
+        "children": [
+          "logo#web",
+          "search-bar",
+          "login",
+          "minicart.v2"
+        ],
+
+        "props": {
+          "fullWidth": "true",
+          "blockClass": "header-apresentation"
+        }
+    },
+
+    "logo#web": {
+        "props": {
+            "title": "Logo Grupo 4",
+            "href": "/",
+            "width": "75",
+            "url": "https://desenvolvdigital.com.br/cursovtex/elefante.png",
+            "blockClass": "logo-maeztra"
+        }
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Logo Grupo 4",
+            "href": "/",
+            "width": "75",
+            "url": "https://desenvolvdigital.com.br/cursovtex/elefante.png",
+            "blockClass": "logo-maeztra"
+        }
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "placeholder": "O que está procurando?",
+            "openAutocompleteOnFocus": true
+        }
+    },
+    
+    "login": {
+        "props": {
+            "showIconProfile": true,
+            "iconLabel": "minha conta",
+            "labelClasses": "user-login"
+        }
+    },
+    "minicart.v2": {
+        "props": {
+            "MinicartIcon": "image#minicart-icon",
+            "customPixelEventId": "add-to-cart-button"
+        },
+        "children": ["minicart-base-content"]
+    },
+
+    "icon-cart#minicart-icon": {
+        "props": {
+            "size": 80
+        }
+    },
+    "image#minicart-icon": {
+        "props": {
+            "src": "assets/svgs/minicart-icon.svg",
+            "maxHeight": 24
+        }
+    },
+
+    "header-row#2-desktop": {
+        "children": [
+            "menu#navigation"
+        ],
+
+        "props": {
+            "blockClass": "header-links"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "flex-layout.row#social-networks": {
+        "props": {
+            "blockClass": "container-images",
+            "colSizing": "auto"
+        },
+        "children": [
+            "image#facebook",
+            "image#linkedin",
+            "image#instagram",
+            "image#youtube"
+        ]
+    },
+    "image#facebook": {
+        "props": {
+            "src": "assets/svgs/facebook-icon.svg",
+            "link": {
+                "url": "https://facebook.com/",
+                "newTab": true
+            }
+        }
+    },
+    "image#linkedin": {
+        "props": {
+            "src": "assets/svgs/linkedin-icon.svg"
+        }
+    },
+    "image#instagram": {
+        "props": {
+            "src": "assets/svgs/instagram-icon.svg"
+        }
+    },
+    "image#youtube": {
+        "props": {
+            "src": "assets/svgs/youtube-icon.svg"
+        }
+    }
+}

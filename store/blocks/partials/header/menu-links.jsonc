@@ -1,0 +1,106 @@
+{
+  "menu#navigation": {
+    "props": {
+        "blockClass": "header-menu-link"
+    },
+    "children": [
+        "menu-item#inicio",
+        "menu-item#hardware",
+        "menu-item#perifericos",
+        "menu-item#notebooks"
+    ]
+  },
+
+  "menu-item#inicio": {
+      "props": {
+        "id": "menu-item-shop",
+        "blockClass": "menu-link-news",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Home",
+          "text": "Home"
+        }
+      //   "iconProps": {
+      //     "id": "bnd-logo",
+      //     "size": 16,
+      //     "viewBox": "0 0 16 16",
+      //     "activeClassName": "rebel-pink",
+      //     "mutedClassName": "c-action-primary"
+      //   },
+      //   "iconToTheRight": true
+      }
+  },
+  "menu-item#hardware": {
+      "props": {
+        "id": "menu-item-hardware",
+        "blockClass": "menu-link",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Hardware",
+          "text": "Hardware"
+        }
+      //   "iconProps": {
+      //     "id": "bnd-logo",
+      //     "size": 16,
+      //     "viewBox": "0 0 16 16",
+      //     "activeClassName": "rebel-pink",
+      //     "mutedClassName": "c-action-primary"
+      //   },
+      //   "iconToTheRight": true
+      }
+  },
+  "menu-item#perifericos": {
+      "props": {
+        "id": "menu-item-perifericos",
+        "blockClass": "menu-link",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Periféricos",
+          "text": "Periféricos"
+        }
+      //   "iconProps": {
+      //     "id": "bnd-logo",
+      //     "size": 16,
+      //     "viewBox": "0 0 16 16",
+      //     "activeClassName": "rebel-pink",
+      //     "mutedClassName": "c-action-primary"
+      //   },
+      //   "iconToTheRight": true
+      }
+  },
+  "menu-item#notebooks": {
+      "props": {
+        "id": "menu-item-notebooks",
+        "blockClass": "menu-link",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Notebooks",
+          "text": "Notebooks"
+        }
+      //   "iconProps": {
+      //     "id": "bnd-logo",
+      //     "size": 16,
+      //     "viewBox": "0 0 16 16",
+      //     "activeClassName": "rebel-pink",
+      //     "mutedClassName": "c-action-primary"
+      //   },
+      //   "iconToTheRight": true
+      }
+  }
+}

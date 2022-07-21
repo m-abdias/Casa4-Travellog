@@ -1,0 +1,60 @@
+{
+    "flex-layout.col#findUs-links": {
+        "props": {
+            "blockClass": "links-container"
+        },
+        "children": [
+            "rich-text#titleFindUs-footer",
+            "vtex.menu@2.x:menu#findUs"
+        ]
+    },
+    "rich-text#titleFindUs-footer": {
+        "props": {
+            "text": "#### Onde nos Encontrar",
+            "blockClass": "titleLinks"
+        }
+    },
+
+    "vtex.menu@2.x:menu#findUs": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "footer-menu-links"
+        },
+        "children": [
+            "menu-item#shop",
+            "menu-item#address"
+        ]
+    },
+    "menu-item#shop": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-shop",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "lojas",
+                "noFollow": false,
+                "tagTitle": "lojas",
+                "text": "Lojas"
+            }
+        }
+    },
+    "menu-item#address": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-address",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "address",
+                "noFollow": false,
+                "tagTitle": "address",
+                "text": "Endereço"
+            }
+        }
+    }
+}
