@@ -1,6 +1,6 @@
-const router = require('express')
 const db = require('../../db/config')
 const UserInfo = require('../model/user_info.model')
+const DatabaseError = require('../model/errors/database.error.model')
 
 class queryInformation {
   async getUserInfo() {
@@ -23,6 +23,27 @@ class queryInformation {
     const { rows } = await db.query(script, values)
     const [ points ] = rows
     return points || []
+  }
+
+  async getUserByNameAndPassword(name, password) {
+    try {
+      const query = `
+        SELECT id, name, password
+        FROM user_info WHERE
+        name = $1,
+        password = crypt($2, 'my_salt')
+      `
+
+      const values = [name, password]
+
+      const { rows } = await db.query(query, values)
+      const [ user ] = rows
+
+      return user || null
+
+    } catch(error) {
+      throw new DatabaseError('Query Error by name and password')
+    }
   }
 
   async createUser(user) {
